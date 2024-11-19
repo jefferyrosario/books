@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body >
+   
+
+    <h2>Library</h2>
+    <button onclick="showForm()">Show Form</button>
+    <form id="bookForm">
+        <div>
+            <label for="author">Name</label>
+            <input type="text" name="author" id="author">
+        </div>
+        <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div>
+            <label for="pages">Pages</label>
+            <input type="text" name="pages" id="pages">
+        </div>
+        <div>
+            <label for="read">Read</label>
+            <select name="read" id="read">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <button  id="submitButton">Submit</button>
+    </form>
+    <table class="books-table">
+        <caption>Books you've read</caption>
+        <thead>
+            <tr>
+                <th scope="col">Author</th>
+                <th scope="col">Book Name</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Read</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="book-body">
+
+        </tbody>
+
+    </table>
+
+    <script src="books.js"></script>
+  
+</body>
+
+</html>
